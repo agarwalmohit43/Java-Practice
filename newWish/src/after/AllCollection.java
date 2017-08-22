@@ -1,19 +1,113 @@
 package after;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Hashtable;
 import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.Map;
+import java.util.TreeMap;
+import java.util.TreeSet;
+
 
 public class AllCollection {
 
 	public static void main(String[] args) {
 
-		arrayList();
-		linkedList();
+		//List's
+		//arrayList();
+		//linkedList();
+		
+		//Set's
+		//hashset();
+		//treeset();
+		
+		//Map
+		//hashmap();
+		//treemap();
+		hashtable();
+	}
+
+	private static void hashtable() {
+		Hashtable<Integer, Integer> hashtable=new Hashtable();
+		hashtable.put(1,1);
+		hashtable.put(4,1);
+		hashtable.put(2,1);
+		hashtable.put(5,1);
+		for(Map.Entry hasEntry:hashtable.entrySet()){
+			System.out.println("Key: "+hasEntry.getKey()+" Value: "+hasEntry.getValue());
+		}
+	}
+
+	private static void treemap() {
+		TreeMap<Integer, Integer> treeMap = new TreeMap<Integer, Integer>();
+		treeMap.put(1, 1);
+		treeMap.put(4, 1);
+		treeMap.put(2, 1);
+		treeMap.put(3, 1);
+		
+		
+		for(Map.Entry hasEntry:treeMap.entrySet()){
+			System.out.println("Key: "+hasEntry.getKey()+" Value: "+hasEntry.getValue());
+		}
+	}
+
+	private static void hashmap() {
+		HashMap<Integer, String> hashMap = new HashMap<Integer, String>();
+		hashMap.put(1, "Mohit");
+		hashMap.put(2, "Kumar");
+		
+		
+		System.out.println("");
+		System.out.println("Containskey: "+hashMap.containsKey(1));
+		System.out.println("HashMap"+hashMap);
+		
+		for(Map.Entry hasEntry:hashMap.entrySet()){
+			System.out.println("Key: "+hasEntry.getKey()+" Value: "+hasEntry.getValue());
+		}
+	}
+
+	private static void treeset() {
+		TreeSet<String> treeSet = new TreeSet<String>();
+		treeSet.add("Mohit");
+		treeSet.add("Kumar");
+		System.out.println(treeSet);
+	}
+
+	private static void hashset() {
+		HashSet<String> hashSet = new HashSet<String>();
+		System.out.println(hashSet.add("Mohit"));
+		System.out.println(hashSet.add("Kumar"));
+		System.out.println(hashSet.add("Kumar"));
+		
+		System.out.println(hashSet.size());
+		System.out.println(hashSet.isEmpty());
+		System.out.println(hashSet.remove("Kumar"));
+		System.out.println(hashSet);
 	}
 
 	private static void linkedList() {
-
 		
+		LinkedList<String> ll = new LinkedList<String>();
+		ll.add("Mohit");
+		ll.addFirst("Mr.");
+		ll.addLast("Agarwal");
+		
+		System.out.println("LinkedList: "+ll);
+		
+		System.out.println("LinkedList Contains: "+ll.contains("Mohit"));
+		System.out.println("LinkedList GetFirst: "+ll.getFirst());
+		System.out.println("LinkedList GetLast: "+ll.getLast());
+		System.out.println("LinkedList peek: "+ll.peek());
+		System.out.println("LinkedList poll: "+ll.poll());
+		System.out.println("LinkedList Size: "+ll.size());
+		
+		System.out.println("LinkedList: "+ll);
+		ll.clear();
+		if(ll.isEmpty())
+			System.out.println("List is empty");
+			
 	}
 
 	private static void arrayList() {
