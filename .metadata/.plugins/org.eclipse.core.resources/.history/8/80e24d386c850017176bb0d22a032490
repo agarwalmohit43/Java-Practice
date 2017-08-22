@@ -1,0 +1,28 @@
+package String;
+
+import java.awt.DisplayMode;
+
+public class RemoveRepeat {
+
+	static String string="abbbcddggyy";
+	
+	public static void main(String[] args) {
+
+		String[] arr=string.split("");
+		removeRepeated(arr);
+		display(arr);
+	}
+
+	private static void display(String[] arr) {
+
+		for(String elements:arr){
+			System.out.print(elements+" ");
+		}
+	}
+
+	private static void removeRepeated(String[] arr) {
+
+		
+	}
+
+}

@@ -1,0 +1,41 @@
+package linkedList;
+
+public class LinkedList {
+	
+	Node head;
+	
+	public LinkedList() {
+		head=null;
+	}
+	
+	public void add(int value){
+		
+		Node node =new Node();
+		node.setNode(head);
+		node.setValue(value);
+		head = node;
+		/*if(head == null)
+		{
+			head = new Node();
+			head.setValue(value);
+			head.setNode(null);
+		
+		}else if(head!= null){
+			Node node=new Node();
+			head.setNode(node);
+			node.setValue(value);
+			node.setNode(null);
+			
+		}*/
+	}
+	
+	public void display(){
+		Node node =new Node();
+		node=head;
+		while(head.getNode() != null){
+			System.out.println(node.getValue());
+			System.out.println(node.getNode());
+			node=node.getNode();
+		}
+	}
+}

@@ -12,8 +12,10 @@ public class Seriliasation implements Serializable {
 
 	 int height,weight;
 	 static Seriliasation obj;
+	 
 	public static void main(String[] args) {
 
+		
 		obj=new Seriliasation();
 		obj.height=5;
 		obj.weight=10;
@@ -48,6 +50,7 @@ public class Seriliasation implements Serializable {
 			ObjectInputStream objectInputS=new ObjectInputStream(fis);
 			obj=(Seriliasation) objectInputS.readObject();
 			objectInputS.close();
+			System.out.println("Object hascode: "+obj.hashCode());
 			System.out.println(obj.height+" "+obj.weight);
 			
 		} catch (Exception e) 

@@ -1,0 +1,20 @@
+package after;
+
+class OverridesCheck{
+	public void display(){
+		
+	}
+	
+	public int add(){
+		return 0;
+	}
+}
+
+public class Overide {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

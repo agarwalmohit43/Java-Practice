@@ -1,0 +1,25 @@
+package after;
+
+class Address{
+	
+}
+class Emp{
+	int id;
+	String name;
+	Address address;
+	
+	Emp(int id,String name,Address address){
+		this.id=id;
+		this.name=name;
+		this.address=address;
+	}
+}
+
+public class Aggregation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

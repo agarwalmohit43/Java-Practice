@@ -1,0 +1,43 @@
+package com.mohit.geeks;
+
+public class unionandintersection {
+
+	public static void main(String[] args) {
+		
+		int[] a={1,2,3,4,5,6,7};
+		int[] b={2,3,4,9};
+		union(a,b,a.length,b.length);
+		
+	}
+
+	private static void union(int[] a, int[] b, int length, int length2) {
+
+		int i=0,j=0,k=0;
+		int[] c=new int[length+length2];
+		while(i<length && j<length2)
+		{
+						if(a[i]< b[j])
+						{
+							c[k++]=a[i++];
+						}else if(a[i]>b[j]){
+							c[k++]=b[j++];
+						}else{
+							c[k++]=b[j++];
+						}
+						
+	    }
+		
+		while(i<length){
+			c[k++]=a[i++];
+		}
+		while(j<length2){
+			c[k++]=b[j++];
+		}
+		for(int m=0;m<=k;m++){
+			System.out.print(" "+c[m]);
+		}
+
+		
+	}
+
+}

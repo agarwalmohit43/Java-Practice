@@ -1,0 +1,18 @@
+package String;
+
+public class RemoveRepeat {
+
+	static String string="abbbcddggyy";
+	
+	public static void main(String[] args) {
+
+		String[] arr=string.split("");
+		removeRepeated(arr);
+	}
+
+	private static void removeRepeated(String[] arr) {
+
+		
+	}
+
+}

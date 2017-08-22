@@ -1,0 +1,19 @@
+package after;
+
+class Address{
+	
+}
+class Emp{
+	int id;
+	String name;
+	Address address;
+}
+
+public class Aggregation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,30 @@
+package after;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+public class Seriliasation implements Serializable {
+
+	 int height,weight;
+	public static void main(String[] args) throws IOException {
+
+		Seriliasation obj=new Seriliasation();
+		obj.height=5;
+		obj.weight=10;
+		try {
+			FileOutputStream fos=new FileOutputStream("F:\\Java\\Serilisation.ser");
+			ObjectOutputStream objectOS=new ObjectOutputStream(fos);
+			objectOS.writeObject(objectOS);
+			objectOS.flush();
+			objectOS.close();
+			
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

@@ -1,0 +1,22 @@
+package after;
+
+public class CompareObjects {
+
+	int age;
+	public static void main(String[] args) {
+
+		CompareObjects obj= new CompareObjects();
+		obj.age = 20;
+		
+		CompareObjects obj2= new CompareObjects();
+		obj2.age = 20;
+		
+		CompareObjects obj3=obj;
+		
+		if(obj.equals(obj3))
+			System.out.println("Equal");
+		else
+			System.out.println("Not Equal");
+	}
+
+}

@@ -1,0 +1,54 @@
+package check;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.TimeZone;
+
+public class as {
+
+	public static void main(String[] args) {
+
+		Map m=new HashMap<Integer, String>();
+		m.put(1, "mohit");
+		
+		for(int i=0;i<5;i++)
+		{
+			m.put(1,"s");
+		}
+		System.out.println(m.get(1));
+		
+		
+		float a=3.0f;
+		if(a==3.0)
+			System.out.println("Yes");
+		else
+			System.out.println("No");
+		
+		unixTime();
+		
+	}
+	
+	
+	public static void unixTime(){
+		/*long unixSeconds = System.currentTimeMillis() / 1000L;;
+		Date date = new Date(unixSeconds*1000L); // *1000 is to convert seconds to milliseconds
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss z"); // the format of your date
+		sdf.setTimeZone(TimeZone.getTimeZone("GMT-4")); // give a timezone reference for formating (see comment at the bottom
+		String formattedDate = sdf.format(date);
+		System.out.println(formattedDate);*/
+		
+		//Unix seconds
+		Date as=new Date();
+		   long unix_seconds = as.getTime();
+		   //convert seconds to milliseconds
+		   Date date = new Date(unix_seconds*1000L); 
+		   // format of the date
+		   SimpleDateFormat jdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss z");
+		   jdf.setTimeZone(TimeZone.getTimeZone("GMT-5.30"));
+		   String java_date = jdf.format(date);
+		   System.out.println("\n"+java_date+"\n");
+	}
+
+}

@@ -1,0 +1,26 @@
+package com.mohit.geeks;
+import java.io.*;
+import java.util.*;
+
+public class systemoutfile {
+
+	public static void main(String[] args) throws Exception  {
+
+		PrintStream op=new PrintStream(new File("MOhit.txt"));
+		
+		PrintStream console=System.out;
+		System.setOut(op);
+		System.out.println("Hi Mohit");
+		
+		String read=null;
+		//System.setOut(console);
+		//System.out.println("Hi");
+		try{
+			BufferedReader br=new BufferedReader("MOhit.txt");
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+		
+	}
+
+}

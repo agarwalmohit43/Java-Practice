@@ -1,0 +1,39 @@
+package sokrati;
+
+import java.util.Date;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
+public class Question_2 {
+
+	public static void main(String[] args) {
+		Date d1=new Date("04/11/2017");
+		Date d2=new Date("04/12/2017");
+		Date d3=new Date("04/13/2017");
+		Date d4=new Date("04/15/2017");
+		Date d5=new Date("04/14/2017");
+
+		Map<Date,Set<Integer>> mn=new HashMap<Date,Set<Integer>>();
+
+		Set<Integer> s0 = new HashSet<Integer>();
+		Set<Integer> s1 = new HashSet<Integer>();
+		Set<Integer> s2 = new HashSet<Integer>();
+		Set<Integer> s3 = new HashSet<Integer>();
+		
+		s0.add(003);
+		s1.add(003);
+		s2.add(004);
+		s2.add(003);
+		s2.add(003);
+		s3.add(004);
+
+		mn.put(d1, s0);
+		mn.put(d2, s1);
+		mn.put(d3, s2);
+		mn.put(d4, s3);
+		mn.put(d5, s0);
+	}
+
+}

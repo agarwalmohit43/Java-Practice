@@ -1,0 +1,15 @@
+package com.mohit.geeks;
+
+
+ class a{
+	static int e=10;
+}
+public class abc extends a {
+
+	public static void main(String[] args) {
+		a ob=new a();
+		System.out.print(ob.e);
+		
+	}
+
+}

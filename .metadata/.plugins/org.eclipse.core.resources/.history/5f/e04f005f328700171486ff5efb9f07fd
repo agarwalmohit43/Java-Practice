@@ -1,0 +1,42 @@
+package after;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+
+class ReverseTheString implements Comparator<String>{
+
+	@Override
+	public int compare(String arg0, String arg1) {
+		// TODO Auto-generated method stub
+		return arg1.compareTo(arg0);
+	}
+	
+}
+
+public class ComparatorUse {
+
+	public static void main(String[] args) {
+
+		ReverseTheString reverseObj=new ReverseTheString();
+	
+		String[] names ={"Clex","Dlex","Blex","Alex"};
+		
+		System.out.println("Contents of Names: ");
+		for(String elements: names)
+			System.out.print(elements+" ");
+		
+		Arrays.sort(names);
+		System.out.println("\nContents of Names: ");
+		for(String elements: names)
+			System.out.print(elements+" ");
+		
+		Arrays.sort(names,reverseObj);
+		System.out.println("Contents of arrayList: ");
+		for(String elements: names)
+			System.out.print(elements+" ");
+		
+		
+	}
+
+}

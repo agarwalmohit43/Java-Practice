@@ -1,0 +1,25 @@
+package after;
+
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+
+public class multiple {
+
+	public static void main(String[] args) {
+
+		
+	}
+	private static void writeObjToFile(multiple obj) {
+
+		try{
+			FileOutputStream fos=new FileOutputStream("F:\\Java\\multiple.txt", true);
+			ObjectOutputStream objectOS=new ObjectOutputStream(fos);
+			objectOS.writeObject(obj);
+			objectOS.flush();
+			objectOS.close();
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+	}
+
+}

@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<watchExpressions>\r\n<expression enabled\="true" text\="as.fastTime"/>\r\n<expression enabled\="true" text\="arr.length"/>\r\n<expression enabled\="true" text\="arr[2]"/>\r\n<expression enabled\="true" text\="dateObj.compareTo(dateObj2)"/>\r\n<expression enabled\="true" text\=""/>\r\n<expression enabled\="true" text\="objectIS.readObject()"/>\r\n<expression enabled\="true" text\="objectIS.readObject()"/>\r\n</watchExpressions>\r\n

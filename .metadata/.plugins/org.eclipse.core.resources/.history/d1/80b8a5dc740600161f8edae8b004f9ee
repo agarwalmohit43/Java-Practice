@@ -1,0 +1,22 @@
+package com.mohit.geeks;
+import java.io.*;
+import java.util.*;
+
+public class systemoutfile {
+
+	public static void main(String[] args) throws FileNotFoundException {
+
+		PrintStream op=new PrintStream(new File("MOhit.txt"));
+		
+		PrintStream console=System.out;
+		System.setOut(op);
+		System.out.println("Hi Mohit");
+		
+		String read=null;
+		//System.setOut(console);
+		//System.out.println("Hi");
+		BufferedReader br=new BufferedReader("MOhit.txt");
+		
+	}
+
+}

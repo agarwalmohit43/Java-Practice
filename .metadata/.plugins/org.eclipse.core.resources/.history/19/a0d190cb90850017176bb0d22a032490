@@ -1,0 +1,22 @@
+package after;
+class Person{
+	String Name;
+	int age;
+}
+
+class Student extends Person{
+	int rollNumber;
+}
+public class typecasting {
+	public static void main(String[] args) {
+
+		Person obj=new Person();
+		obj.age=50;
+		obj.Name="Mohit";
+		
+		Student s=(Student) obj;
+		
+		
+	}
+
+}

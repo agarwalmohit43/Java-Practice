@@ -1,0 +1,17 @@
+package linkedListPrac;
+
+public class Main {
+
+	public static void main(String[] args){
+		LinedList linedList = new LinedList();
+		linedList.addAtLast(5);
+		linedList.addAtLast(15);
+		linedList.addAtFirst(52);
+		
+		linedList.addAtLast(25);
+		
+	
+		linedList.display();
+
+	}
+}

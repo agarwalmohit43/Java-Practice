@@ -1,0 +1,15 @@
+package after;
+
+import java.util.ArrayList;
+
+public class PrimitveType {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		ArrayList<Integer> al =new ArrayList();
+		al.add(5);
+		
+	}
+
+}

@@ -1,0 +1,23 @@
+package after;
+class Cycle{
+	int weight;
+	public void display(){
+		System.out.println(weight);
+	}
+}
+
+class ByCylce extends Cycle{
+	int height;
+	public void display(){
+		System.out.println(weight);
+		System.out.println(heiht);
+	}
+}
+public class Iinheritance {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

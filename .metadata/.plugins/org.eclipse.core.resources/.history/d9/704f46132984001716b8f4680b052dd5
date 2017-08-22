@@ -1,0 +1,32 @@
+package after;
+
+import java.util.*;
+class PhoneFeatures{
+	private String os;
+	private String brand;
+	public String getOs() {
+		return os;
+	}
+	public void setOs(String os) {
+		this.os = os;
+	}
+	public String getBrand() {
+		return brand;
+	}
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+}
+public class Phone {
+	
+	Arraylist<PhoneFeatures> arrayList;
+	
+	public static void main(String[] args){
+		PhoneFeatures samsung=new PhoneFeatures();
+		samsung.setBrand("Samsung");
+		samsung.setOs("Android");
+		
+		
+	}
+
+}

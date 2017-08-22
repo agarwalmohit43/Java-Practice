@@ -1,0 +1,51 @@
+package String;
+
+import java.awt.DisplayMode;
+
+public class RemoveRepeat {
+
+	static String string="abbcdd";
+	static String[] arr=string.split("");
+	public static void main(String[] args) {
+
+		
+		removeRepeated();
+		display();
+	}
+
+	private static void display() {
+
+		for(String elements:arr){
+			System.out.print(elements+" ");
+		}
+		System.out.println();
+	}
+
+	private static void removeRepeated() {
+
+		for(int i=0;i<arr.length-1;i++){
+			
+			for(int j=i+1;j<arr.length;j++){
+				if(i==j){
+					continue;
+				}else if(arr[i].equals(arr[j])){
+					removeElment(j+1);
+					display();
+				}else{
+					continue;
+				}
+				
+			}
+		}
+		
+	}
+
+	private static void removeElment(int pos) {
+
+		for(int i=pos-1;i<arr.length-1;i++){
+			arr[i]=arr[i+1];
+			arr[i+1]=0;
+		}
+	}
+
+}

@@ -1,0 +1,22 @@
+package linkedListPrac;
+
+public class Main {
+
+	public static void main(String[] args){
+		LinedList linedList = new LinedList();
+		linedList.addAtLast(1);
+		linedList.addAtLast(2);
+		linedList.addAtLast(3);
+		linedList.addAtLast(4);
+		linedList.addAtLast(5);
+		linedList.addAtLast(6);
+		linedList.addAtFirst(7);
+		
+		linedList.deleteAtFirst();
+		linedList.deleteAtEnd();
+		
+		linedList.deleteAtPos(2);
+		linedList.display();
+
+	}
+}

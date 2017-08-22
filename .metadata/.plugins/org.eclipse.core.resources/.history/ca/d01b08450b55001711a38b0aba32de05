@@ -1,0 +1,83 @@
+package sokrati;
+import java.io.*;
+import java.text.SimpleDateFormat;
+import java.util.*;
+
+public class CustomerLoginInfo {
+
+	// Note: We have assumed that customerID are Inetger
+	// Also the file is read in the custLoginMap
+	// custLoginMap is Map which contains the Set of customerID logeed in a
+	// particular Date
+	public Set<Integer> get4ConsecutiveDays(Map<Date, Set<Integer>> custLoginMap) {
+
+		Set<Integer> retSet = new HashSet<Integer>();
+
+		// Get the sorted keys
+		SortedSet<Date> sortedDays = new TreeSet<Date>(custLoginMap.keySet());
+
+		Date[] sortedDaysArr = sortedDays.toArray(new Date[sortedDays.size()]);
+
+		Set<Integer> s0 = custLoginMap.get(sortedDaysArr[0]);
+		Set<Integer> s1 = custLoginMap.get(sortedDaysArr[1]);
+		Set<Integer> s2 = custLoginMap.get(sortedDaysArr[2]);
+		Set<Integer> s3 = custLoginMap.get(sortedDaysArr[3]);
+
+		Set<Integer> s0Ints1 = new HashSet<Integer>(s0);
+		s0Ints1.retainAll(s1);
+
+		Set<Integer> s2Ints3 = new HashSet<Integer>(s2);
+		s2Ints3.retainAll(s3);
+
+		Set<Integer> finalSetInt = new HashSet<>(s0Ints1);
+		finalSetInt.retainAll(s2Ints3);
+
+		retSet.addAll(finalSetInt);
+
+		for (int i = 4; i < sortedDays.size(); i++) {
+
+			// Destroy s0Ints1
+			if (i % 4 == 0) {
+				s0Ints1 = custLoginMap.get(sortedDaysArr[i]);
+				s0Ints1.retainAll(custLoginMap.get(sortedDaysArr[i - 4 + 1]));
+
+			}
+
+			// Destroy s0Ints1
+			if (i % 4 == 1) {
+				s0Ints1 = custLoginMap.get(sortedDaysArr[i]);
+				s0Ints1.retainAll(custLoginMap.get(sortedDaysArr[i - 1]));
+			}
+
+			if (i % 4 == 2) {
+				s2Ints3 = custLoginMap.get(sortedDaysArr[i]);
+				s0Ints1.retainAll(custLoginMap.get(sortedDaysArr[i - 4 + 1]));
+			}
+
+			if (i % 4 == 3) {
+				s2Ints3 = custLoginMap.get(sortedDaysArr[i]);
+				s0Ints1.retainAll(custLoginMap.get(sortedDaysArr[i - 1]));
+			}
+
+			finalSetInt = new HashSet<>(s0Ints1);
+			finalSetInt.retainAll(s2Ints3);
+
+			retSet.addAll(finalSetInt);
+
+		}
+
+		return retSet;
+	}
+
+	public static void main(String[] args) {
+		Date x=new Date("04/11/2017");
+		
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		Map<Date, Set<Integer>> mp=new HashMap<Date, Set<Integer>>();
+		mp.put(x, 0003);
+		
+		
+	}
+
+}

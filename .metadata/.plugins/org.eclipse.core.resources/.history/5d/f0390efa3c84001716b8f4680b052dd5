@@ -1,0 +1,31 @@
+package after;
+
+class Address{
+	String City;
+	String State;
+	String Country;
+}
+class Emp{
+	int id;
+	String name;
+	Address address;
+	
+	Emp(int id,String name,Address address){
+		this.id=id;
+		this.name=name;
+		this.address=address;
+	}
+	
+	public void dis() {
+			System.out.println("Emp Id: "+id+"\nEmp Name: "+name+"Address: "+);
+	}
+}
+
+public class Aggregation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

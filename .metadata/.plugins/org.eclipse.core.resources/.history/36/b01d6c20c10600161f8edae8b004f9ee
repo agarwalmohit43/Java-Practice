@@ -1,0 +1,21 @@
+package com.mohit.geeks;
+import java.io.*;
+
+public class abc {
+
+	public static void main(String[] args) throws FileNotFoundException {
+
+		
+		PrintStream op=new PrintStream(new File("MOHITs.txt"));
+		PrintStream console=System.out;
+
+		System.setOut(op);
+		System.out.println("This is writtent");
+		
+		
+		System.setOut(console);
+		System.out.println("This is written");
+
+	}
+
+}

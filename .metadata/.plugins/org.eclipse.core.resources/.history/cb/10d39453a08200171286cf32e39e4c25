@@ -1,0 +1,18 @@
+package after;
+
+public class Generics {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public static <E> void printArray(E[] inputarray){
+		
+		for( E elements: inputarray){
+			System.out.println(elements);
+		}
+		
+	}
+
+}

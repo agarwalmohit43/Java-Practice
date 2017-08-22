@@ -1,0 +1,27 @@
+package com.mohit.geeks;
+
+
+ class a{
+	a(){
+		System.out.println("Constructor of parent class");
+		
+	}
+	
+	
+}
+ 
+ class b extends a{
+	 b(){
+			System.out.println("Constructor of base class");
+
+	 }
+ }
+public class abc  {
+
+	public static void main(String[] args) {
+		b ob=new b();
+		
+		
+	}
+
+}

@@ -1,0 +1,22 @@
+package after;
+
+public class ObjectPlaying {
+
+	public static void main(String[] args) {
+
+		objA obj=new objA();
+		System.out.print(obj);
+		System.out.print(obj.x);
+	}
+
+}
+
+class objA{
+	int x;
+}
+
+class objB{
+	public void methodB(objA obj){
+		System.out.println(obj);
+	}
+}

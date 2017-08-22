@@ -1,0 +1,21 @@
+package after;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class AllCollection {
+
+	public static void main(String[] args) {
+
+		ArrayList<String> al=new ArrayList<String>();
+		al.add("Mohit");
+		al.add("Agarwal");
+		
+		
+		Iterator<String> it=al.iterator();
+		while(it.hasNext()){
+			System.out.print(it.next()+"");
+		}
+	}
+
+}

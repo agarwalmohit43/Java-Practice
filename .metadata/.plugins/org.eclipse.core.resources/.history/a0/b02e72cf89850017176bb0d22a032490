@@ -1,0 +1,18 @@
+package after;
+interface comm{}
+class Inherits{
+	static int a=5;
+}
+
+public class CheckInheritance extends Inherits implements comm{
+
+	static comm co;
+	public static void main(String[] args) {
+		Inherits.a=10;
+		CheckInheritance obj=new CheckInheritance();
+		
+		co=(comm) obj;
+		System.out.println(Inherits.a);
+	}
+
+}

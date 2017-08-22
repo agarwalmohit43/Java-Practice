@@ -1,0 +1,25 @@
+package linkedList;
+
+public class LinkedList {
+	
+	Node head;
+	
+	public LinkedList() {
+		head=null;
+	}
+	
+	public void add(int value){
+		
+		if(head == null)
+		{
+			head = new Node();
+			head.setValue(value);
+			head.setNode(null);
+		
+		}else if(head!= null){
+			Node node=new Node();
+			node.setValue(value);
+			node.setNode(head);
+		}
+	}
+}

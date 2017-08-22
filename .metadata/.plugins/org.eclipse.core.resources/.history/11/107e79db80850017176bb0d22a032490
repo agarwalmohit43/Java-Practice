@@ -1,0 +1,14 @@
+package after;
+
+class Inherits{
+	int a=5;
+}
+
+public class CheckInheritance {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

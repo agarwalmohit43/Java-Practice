@@ -1,0 +1,14 @@
+package after;
+
+class Inherits{
+	static int a=5;
+}
+
+public class CheckInheritance extends Inherits{
+
+	public static void main(String[] args) {
+		Inherits.a=10;
+		System.out.println(a);
+	}
+
+}

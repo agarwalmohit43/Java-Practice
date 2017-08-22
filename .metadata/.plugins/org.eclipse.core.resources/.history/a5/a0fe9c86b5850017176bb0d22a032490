@@ -1,0 +1,29 @@
+package check;
+
+public class BinarySearch {
+
+	static int[] arr={1,2,3,4,5,6,7,8};
+	public static void main(String[] args) {
+		binarySearch(5);
+		
+	}
+	private static void binarySearch(int element) {
+		int low=0,high=arr.length-1;
+		int mid=(low+high)/2;
+		while(low<high){
+			if(arr[mid]>element){
+				low=mid+1;
+			}else if(arr[mid]==element){
+				System.out.println("Element Found at pos: "+mid+1);
+			}else{
+				high=mid-1;
+			}
+			mid=(low+high)/2;
+		}
+		
+		if(low>high){
+			System.out.print("Element Not Found");
+		}
+	}
+
+}

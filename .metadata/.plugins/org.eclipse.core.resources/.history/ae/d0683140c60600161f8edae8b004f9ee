@@ -1,0 +1,16 @@
+package com.mohit.geeks;
+
+public class jaggedarray {
+
+	public static void main(String[] args) {
+
+		int a[][]=new int[2][];
+		 a[0]=new int[3];
+	
+		 a[1]=new int[2];
+		
+		 int count=1;
+		 
+	}
+
+}

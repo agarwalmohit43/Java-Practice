@@ -1,0 +1,37 @@
+package after;
+
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+
+public class CustomHashMapSeri {
+
+	int age;
+	public static void main(String[] args) {
+
+		CustomHashMapSeri obj=new CustomHashMapSeri();
+		obj.age=10;
+		
+		writeObjToFile(obj);
+		readobjectFromFile(obj.hashCode());
+		
+	}
+	private static void readobjectFromFile(int hashCode) {
+
+		
+	}
+	private static void writeObjToFile(CustomHashMapSeri obj) {
+
+		try{
+			FileOutputStream fos = new FileOutputStream("F:\\Java\\CustomHashMapSeri.txt");
+			ObjectOutputStream objectOS = new ObjectOutputStream(fos);
+			objectOS.writeObject(obj);
+			objectOS.flush();
+			objectOS.close();
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+	}
+	
+	
+
+}

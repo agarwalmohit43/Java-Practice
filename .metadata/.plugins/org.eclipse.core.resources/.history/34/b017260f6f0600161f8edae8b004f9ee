@@ -1,0 +1,24 @@
+package com.mohit.geeks;
+
+import java.lang.*;
+
+class finalclass{
+	int i=10;
+	
+	
+}
+
+public class finalandobj {
+
+	public static void main(String[] args) {
+
+		final finalclass obj=new finalclass();
+		obj.i=30;
+		System.out.println("Value Of I: "+obj.i);
+		obj.i=20;
+		System.out.println("Value Of I: "+obj.i);
+		
+	}
+
+}
+

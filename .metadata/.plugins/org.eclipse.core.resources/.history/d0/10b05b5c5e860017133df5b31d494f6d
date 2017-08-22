@@ -1,0 +1,17 @@
+package inputOutputSCJP;
+
+import java.io.File;
+
+public class FileCreation {
+
+	public static void main(String[] args) {
+
+		try{
+			File file=new File("F:\\Java\\scjp\\one.txt");
+			
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+	}
+
+}

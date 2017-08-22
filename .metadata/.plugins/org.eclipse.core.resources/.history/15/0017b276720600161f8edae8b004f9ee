@@ -1,0 +1,19 @@
+package com.mohit.geeks;
+import java.lang.*;
+import java.util.*;
+
+
+public class inputslocha {
+
+	public static void main(String[] args) {
+
+Scanner in=new Scanner(System.in);
+
+	System.out.println("Enter Ur Full name");
+	String s=in.next();
+	System.out.println("Your Full Name: "+s);
+
+	
+	}
+
+}
