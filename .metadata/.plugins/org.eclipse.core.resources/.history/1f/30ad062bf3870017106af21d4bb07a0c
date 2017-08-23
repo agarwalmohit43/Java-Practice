@@ -1,0 +1,26 @@
+package thread2;
+
+public class Bank implements Runnable {
+
+	private Account act = new Account(50);
+	
+	public static void main(String[] args) {
+
+		Bank obj=new Bank();
+		Thread t1 = new Thread(obj);
+		Thread t2 = new Thread(obj);
+		Thread t3 = new Thread(obj);
+		
+		t1.start();
+		t2.start();
+		t3.start();
+		
+	}
+
+	@Override
+	public void run() {
+
+		
+	}
+
+}

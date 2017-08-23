@@ -1,0 +1,20 @@
+package thread2;
+
+public class Basic implements Runnable {
+
+	public static void main(String[] args) {
+
+		Basic obj=new Basic();
+		
+		Thread t1= new Thread();
+		t.start();
+		
+	}
+
+	@Override
+	public void run() {
+
+		System.out.println(Thread.currentThread().getName());
+	}
+
+}

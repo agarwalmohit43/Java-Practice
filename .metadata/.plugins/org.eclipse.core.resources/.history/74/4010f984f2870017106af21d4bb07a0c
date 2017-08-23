@@ -1,0 +1,23 @@
+package thread2;
+
+public class Bank extends Account implements Runnable {
+
+	public Bank(int balance) {
+		super(balance);
+		// TODO Auto-generated constructor stub
+	}
+
+	private Account act = new Account(50);
+	
+	public static void main(String[] args) {
+
+		
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

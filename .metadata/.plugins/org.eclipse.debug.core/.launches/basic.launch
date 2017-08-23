@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/newWish/src/Interface/basic.java"/>
+<listEntry value="/newWish/src/thread2/Basic.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
 </listAttribute>
-<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="Interface.basic"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="thread2.Basic"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="newWish"/>
 </launchConfiguration>
