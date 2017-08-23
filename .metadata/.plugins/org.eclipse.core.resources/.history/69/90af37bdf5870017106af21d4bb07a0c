@@ -1,11 +1,11 @@
 package thread2;
 
-public class Bank implements Runnable 
-{
+public class Bank implements Runnable {
+
 	private Account act = new Account(50);
 	
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
+
 		Bank obj=new Bank();
 		Thread t1 = new Thread(obj);
 		Thread t2 = new Thread(obj);
@@ -15,6 +15,7 @@ public class Bank implements Runnable
 		
 		t1.start();
 		t2.start();
+		
 	}
 
 	@Override
@@ -33,6 +34,7 @@ public class Bank implements Runnable
 			{
 				System.out.println("Account Overdrawn!!!!");
 			}
+				
 		}
 	}
 
@@ -44,9 +46,11 @@ public class Bank implements Runnable
 			
 			act.withdraw(amnt);
 			System.out.println(Thread.currentThread().getName()+" -> Withdrawl Amount: "+amnt);
+			
 		}else
 		{
 			System.out.println("Not enough balance to withdraw for ->"+Thread.currentThread().getName()+" Available balance: "+act.getBalance());
 		}
 	}
+
 }
