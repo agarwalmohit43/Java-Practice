@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="triangle" class="org.mohit.spring.Triangle">
+    	<!-- Used for setter <property name="type" value="Euqilateral"></property> -->
+    	
+    	<!-- When single cons is called use type and specify ex: type="java.lang.String"-->
+    	
+    	<constructor-arg inde="0" value="Equilateral"/>
+    	<constructor-arg index="1" value="20"/>
+    </bean>
+
+</beans>

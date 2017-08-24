@@ -1,0 +1,25 @@
+package org.mohit.spring;
+
+import java.util.List;
+
+public class Triangle {
+
+	private List<Point> point;
+
+	
+	public List<Point> getPoint() {
+		return point;
+	}
+
+
+	public void setPoint(List<Point> point) {
+		this.point = point;
+	}
+
+
+	public void draw(){
+		//System.out.println("Point A -> Width: "+getPointA().getWidth()+" Height: "+getPointA().getHeight());
+		//System.out.println("Point B -> Width: "+getPointB().getWidth()+" Height: "+getPointB().getHeight());
+		//System.out.println("Point C -> Width: "+getPointC().getWidth()+" Height: "+getPointC().getHeight());
+	}
+}

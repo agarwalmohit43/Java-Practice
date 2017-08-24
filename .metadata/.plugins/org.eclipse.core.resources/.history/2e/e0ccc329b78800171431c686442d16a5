@@ -1,0 +1,11 @@
+package org.mohit.spring;
+
+public class Triangle {
+
+	
+	public void draw(){
+		//System.out.println("Point A -> Width: "+getPointA().getWidth()+" Height: "+getPointA().getHeight());
+		//System.out.println("Point B -> Width: "+getPointB().getWidth()+" Height: "+getPointB().getHeight());
+		//System.out.println("Point C -> Width: "+getPointC().getWidth()+" Height: "+getPointC().getHeight());
+	}
+}

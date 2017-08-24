@@ -1,0 +1,8 @@
+package org.mohit.spring;
+
+public class Traingle {
+
+	public void draw(){
+		System.out.println("Traingle Drawn");
+	}
+}
