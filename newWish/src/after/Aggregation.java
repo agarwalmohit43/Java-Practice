@@ -6,7 +6,6 @@ class Address{
 	String Country;
 
 	public Address(String city, String state, String country) {
-		super();
 		City = city;
 		State = state;
 		Country = country;
