@@ -5,6 +5,31 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Admission Success</title>
+ <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            border-spacing: 0;
+            border: 1px solid #ddd
+        }
+        td, th {
+            border: none;
+            text-align: left;
+            padding: 8px;
+        }
+        th{
+            background-color: #f7f7f9;
+            font-family: "Lato", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover
+        {
+            background-color: cornflowerblue;
+        }
+    </style>
 </head>
 <body>
 
@@ -19,6 +44,15 @@
 			<th>
 				Hobby
 			</th>
+			<th>
+				Mobile
+			</th>
+			<th>
+				DOB
+			</th>
+			<th>
+				Skills
+			</th>
 		</tr>
 		<tr>
 			<td>
@@ -26,6 +60,15 @@
 			</td>
 			<td>
 				${student.studenthobby}
+			</td>
+			<td>
+				${student.studentmobile}
+			</td>
+			<td>
+				${student.studentdob}
+			</td>
+			<td>
+				${student.studentskills}
 			</td>
 		</tr>
 	</table>

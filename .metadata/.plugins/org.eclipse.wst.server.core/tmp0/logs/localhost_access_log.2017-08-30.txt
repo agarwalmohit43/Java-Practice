@@ -17,3 +17,15 @@
 0:0:0:0:0:0:0:1 - - [30/Aug/2017:01:11:03 +0530] "GET /StudentAdmisionForm/getadm HTTP/1.1" 200 555
 0:0:0:0:0:0:0:1 - - [30/Aug/2017:01:11:08 +0530] "POST /StudentAdmisionForm/postadm.html HTTP/1.1" 200 367
 0:0:0:0:0:0:0:1 - - [30/Aug/2017:01:24:55 +0530] "GET /StudentAdmisionForm/getadm HTTP/1.1" 200 555
+127.0.0.1 - - [30/Aug/2017:01:25:22 +0530] "GET / HTTP/1.1" 404 992
+0:0:0:0:0:0:0:1 - - [30/Aug/2017:01:25:22 +0530] "GET /StudentAdmisionForm/getadm HTTP/1.1" 200 555
+127.0.0.1 - - [30/Aug/2017:01:25:22 +0530] "GET /StudentAdmisionForm/ HTTP/1.1" 404 990
+0:0:0:0:0:0:0:1 - - [30/Aug/2017:01:25:22 +0530] "GET /favicon.ico HTTP/1.1" 404 1014
+0:0:0:0:0:0:0:1 - - [30/Aug/2017:01:25:31 +0530] "POST /StudentAdmisionForm/postadm.html HTTP/1.1" 200 498
+0:0:0:0:0:0:0:1 - - [30/Aug/2017:01:32:10 +0530] "GET /StudentAdmisionForm/getadm HTTP/1.1" 200 555
+0:0:0:0:0:0:0:1 - - [30/Aug/2017:01:32:11 +0530] "GET /favicon.ico HTTP/1.1" 404 1014
+0:0:0:0:0:0:0:1 - - [30/Aug/2017:01:32:20 +0530] "POST /StudentAdmisionForm/postadm.html HTTP/1.1" 200 497
+0:0:0:0:0:0:0:1 - - [30/Aug/2017:01:45:57 +0530] "GET /StudentAdmisionForm/getadm HTTP/1.1" 200 581
+0:0:0:0:0:0:0:1 - - [30/Aug/2017:01:49:37 +0530] "GET /StudentAdmisionForm/getadm HTTP/1.1" 200 581
+0:0:0:0:0:0:0:1 - - [30/Aug/2017:01:49:43 +0530] "GET /StudentAdmisionForm/getadm HTTP/1.1" 200 581
+0:0:0:0:0:0:0:1 - - [30/Aug/2017:01:49:58 +0530] "GET /StudentAdmisionForm/getadm HTTP/1.1" 200 582
