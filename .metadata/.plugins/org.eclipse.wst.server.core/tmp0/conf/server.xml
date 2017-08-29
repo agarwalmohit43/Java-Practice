@@ -122,7 +122,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\eclipse\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\eclipse\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\javademo" path="/javademo" reloadable="true" source="org.eclipse.jst.jee.server:javademo"/></Host>
+      <Context docBase="C:\eclipse\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\eclipse\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\userManagement" path="/userManagement" reloadable="true" source="org.eclipse.jst.jee.server:userManagement"/><Context docBase="C:\eclipse\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\FirstSpringMVC" path="/FirstSpringMVC" reloadable="true" source="org.eclipse.jst.jee.server:FirstSpringMVC"/><Context docBase="C:\eclipse\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\javademo" path="/javademo" reloadable="true" source="org.eclipse.jst.jee.server:javademo"/><Context docBase="C:\eclipse\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\StudentAdmisionForm" path="/StudentAdmisionForm" reloadable="true" source="org.eclipse.jst.jee.server:StudentAdmisionForm"/></Host>
     </Engine>
   </Service>
 </Server>

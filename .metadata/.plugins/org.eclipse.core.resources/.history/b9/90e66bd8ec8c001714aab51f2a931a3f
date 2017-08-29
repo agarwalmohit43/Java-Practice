@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="StudentAdmisionForm">
+        <property name="context-root" value="StudentAdmisionForm"/>
+        <property name="java-output-path" value="/StudentAdmisionForm/build/classes"/>
+    </wb-module>
+</project-modules>

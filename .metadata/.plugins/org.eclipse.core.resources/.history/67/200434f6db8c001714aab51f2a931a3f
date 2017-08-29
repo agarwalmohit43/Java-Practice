@@ -1,0 +1,18 @@
+package check;
+class Constr{
+
+	public Constr() {
+		System.out.println("Constructor called");
+	}
+	
+}
+
+public class ConstructorCalling {
+
+	public static void main(String[] args) {
+
+		Constr con=new Constr();
+		
+	}
+
+}

@@ -1,0 +1,6 @@
+#Tomcat publish data
+#Wed Aug 30 01:49:52 IST 2017
+org.eclipse.jst.jee.server\:/binary\:C\:\\eclipse\\workspace\\StudentAdmisionForm\\WebContent\\WEB-INF\\lib\\spring-web-4.3.9.RELEASE-sources.jar=WEB-INF/lib/spring-web-4.3.9.RELEASE-sources.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\eclipse\\workspace\\StudentAdmisionForm\\WebContent\\WEB-INF\\lib\\spring-web-4.3.9.RELEASE.jar=WEB-INF/lib/spring-web-4.3.9.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\eclipse\\workspace\\FirstSpringMVC\\WebContent\\WEB-INF\\lib\\spring-web-4.3.9.RELEASE.jar=WEB-INF/lib/spring-web-4.3.9.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\eclipse\\workspace\\FirstSpringMVC\\WebContent\\WEB-INF\\lib\\spring-web-4.3.9.RELEASE-sources.jar=WEB-INF/lib/spring-web-4.3.9.RELEASE-sources.jar

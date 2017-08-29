@@ -1,5 +1,0 @@
-127.0.0.1 - - [13/Apr/2016:02:18:17 +0530] "GET / HTTP/1.1" 404 992
-0:0:0:0:0:0:0:1 - - [13/Apr/2016:02:18:19 +0530] "GET /javademo/studentform.html HTTP/1.1" 200 1046
-0:0:0:0:0:0:0:1 - - [13/Apr/2016:02:25:07 +0530] "GET /javademo/WEB-INF/classes/com/mohit/jsp/Funutils.java HTTP/1.1" 404 990
-0:0:0:0:0:0:0:1 - - [13/Apr/2016:02:26:41 +0530] "GET /javademo/helloworld.jsp HTTP/1.1" 200 156
-0:0:0:0:0:0:0:1 - - [13/Apr/2016:02:26:52 +0530] "GET /javademo/built-in-object.jsp HTTP/1.1" 200 242

@@ -1,0 +1,29 @@
+package check;
+
+class one{
+	public static void change(){
+		
+	}
+}
+
+class two{
+	private double bal;
+
+	public double getBal() {
+		return bal;
+	}
+
+	public void setBal(double bal) {
+		this.bal = bal;
+	}
+	
+}
+
+public class ObjectChangingValue {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

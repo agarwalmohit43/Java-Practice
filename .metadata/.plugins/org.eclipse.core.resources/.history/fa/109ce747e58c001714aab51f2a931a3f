@@ -1,0 +1,10 @@
+<html>
+   <head>
+      <title>Hello World</title>
+   </head>
+   
+   <body>
+   		<h1>Spring MVC</h1>
+      <strong><h2>${WelcomeMessage}</h2></strong>
+   </body>
+</html>

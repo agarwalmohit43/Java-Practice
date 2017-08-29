@@ -14,7 +14,16 @@ public class regex {
 		String[] expressionSplit= expression.trim().split("[+*/-]");
 		for(String elements: expressionSplit){
 			System.out.println(elements);
+			
+			int x=checck(100);
+			System.out.print(x);
 		}
+	}
+
+	private static int checck(int i) {
+		if(i<=0)
+			return 1;
+		return checck(i-1);
 	}
 
 }
