@@ -72,5 +72,19 @@
 			</td>
 		</tr>
 	</table>
+	
+	<table>
+		<tr>
+			<th>
+				Address
+			</th>
+		</tr>
+		<tr>
+			<td> ${student.studentaddress.city}</td>
+			<td> ${student.studentaddress.pincode}</td>
+			<td> ${student.studentaddress.state}</td>
+			<td> ${student.studentaddress.country}</td>
+		</tr>
+	</table>
 </body>
 </html>

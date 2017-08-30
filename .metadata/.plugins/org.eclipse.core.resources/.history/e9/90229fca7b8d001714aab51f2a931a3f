@@ -1,0 +1,10 @@
+package com.mohit.student;
+
+import java.lang.annotation.Documented;
+
+
+@Documented
+
+public @interface isValidHobby {
+
+}

@@ -1,0 +1,17 @@
+package com.mohit.student;
+
+import javax.validation.ConstraintValidator;
+import javax.validation.ConstraintValidatorContext;
+
+public class HobbyValidator implements ConstraintValidator<Annotation, String> {
+
+	@Override
+	public boolean isValid(String studenthobby, ConstraintValidatorContext context) {
+
+		if(studenthobby == null)
+			return false;
+		
+		
+	}
+
+}

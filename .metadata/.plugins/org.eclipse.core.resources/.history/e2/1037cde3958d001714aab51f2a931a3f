@@ -1,0 +1,23 @@
+package com.mohit.student;
+
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+
+@ControllerAdvice
+public class GlobalExceptionHandlerMethod {
+
+	@ExceptionHandler(value=NullPointerException.class)
+	public String handleNullPointer(Exception e){
+		
+		return "NullPointerException";
+		
+	}
+	
+	//Generic exception handler
+	@ExceptionHandler(value=Exception.class)
+	public String handleGeneric(Exception e){
+		
+		return "GenericException";
+		
+	}
+}

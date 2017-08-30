@@ -16,4 +16,27 @@ xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springf
       <property name = "suffix" value = ".jsp" />
    </bean>
 
+	<mvc:interceptors>
+		<mvc:interceptor>
+		<mvc:mapping path="/getadm"/>
+		<bean class="com.mohit.student.DayOfWeekNotAllowed"/>
+		</mvc:interceptor>
+	</mvc:interceptors>
+
+<bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+        <property name="basenames" value="/WEB-INF/studentMessages"/>
+        <!--For not restarting the server( *should be used under production not live environment)  -->
+        <property name="cacheSeconds" value="1"/>
+    </bean>
+    
+    <!--When u want to handle ur exception using xml  -->
+   <!--  <bean id="simpleMappingExceptionResolver" class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+    	<property name="exceptionMappings">
+    		<map>
+    			<entry key="NullPointerException" value="NullPointerException"/>
+    		</map>
+    	</property>
+   		 <property name="defaultErrorView" value="Exception"/>
+   		 <property name="warnLogCategory" value="MVCLogger"/>
+    </bean> -->
 </beans>

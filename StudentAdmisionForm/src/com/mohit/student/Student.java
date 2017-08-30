@@ -3,17 +3,34 @@ package com.mohit.student;
 import java.util.ArrayList;
 import java.util.Date;
 
+import javax.validation.constraints.Past;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
+
 public class Student {
 
+	@Pattern(regexp="[^0-9]*")
 	private String studentname;
+	
+	@Size(min=2,max=10) @isValidHobby(listOfHobbies="Music|Coding")
 	private String studenthobby;
 	
 	private long studentmobile;
+	
+	@Past
 	private Date studentdob;
 	private ArrayList<String> studentskills;
 	
+	private Address studentaddress;
 	
 	
+	
+	public Address getStudentaddress() {
+		return studentaddress;
+	}
+	public void setStudentaddress(Address studentaddress) {
+		this.studentaddress = studentaddress;
+	}
 	public long getStudentmobile() {
 		return studentmobile;
 	}

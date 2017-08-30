@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ taglib  prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -34,6 +33,10 @@
 <body>
 	<h1>Student Admission</h1>
 	<h2>${msg}</h2>
+	
+	<p>
+		<form:errors path="student.*"/>
+	</p>
 	
 	<form action="/StudentAdmisionForm/postadm.html" method="post">
 		<table>
@@ -79,11 +82,31 @@
 								<option value="Hibernate">Hibernate</option>
 					</select>
 				</td>
+				
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<th>Address</th>
+			</tr>
+			<tr>
 				<td>
-					<input type="submit" value="Submit">
+					City: <input type="text" name="studentaddress.city" />
+				</td>
+				<td>
+					Pincode: <input type="text" name="studentaddress.pincode" />
+				</td>
+				<td>
+					State: <input type="text" name="studentaddress.state" />
+				</td>
+				<td>
+					Country: <input type="text" name="studentaddress.country" />
 				</td>
 			</tr>
 		</table>
+		<td>
+					<input type="submit" value="Submit">
+				</td>
 	</form>
 </body>
 </html>
