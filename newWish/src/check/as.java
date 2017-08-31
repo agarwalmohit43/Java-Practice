@@ -37,13 +37,14 @@ public class as {
 
 		Map m=new HashMap<Integer, String>();
 		m.put(1, "mohit");
+		int i=10;
 		
-		for(int i=0;i<5;i++)
+		for(i=0;i<5;i++)
 		{
 			m.put(1,"s");
 		}
 		System.out.println(m.get(1));
-		
+		System.out.println(i);
 		
 		float a=3.0f;
 		if(a==3.0)
@@ -51,6 +52,9 @@ public class as {
 		else
 			System.out.println("No");
 		
+		System.out.println();
+		System.out.println();
+		System.out.println();
 		unixTime();
 		
 	}

@@ -5,17 +5,24 @@ import java.util.ArrayList;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.http.MediaType.*;
 
 import com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodType;
+import com.sun.org.apache.xpath.internal.operations.Bool;
 
 @RestController
 public class StudentRestAPIController {
 
+	//**********************************Retrive all Student********************************************//
 	/*@ResponseBody is not used when using class as restcontroller it tells all method automatic about rest*/
 	@RequestMapping(value= "/students", method=RequestMethod.GET, produces=org.springframework.http.MediaType.APPLICATION_JSON_VALUE)
 	public ArrayList<Student> studentInfo(){
@@ -42,6 +49,7 @@ public class StudentRestAPIController {
 		return studentList;
 	}
 	
+	//**********************************Retrive Student********************************************//
 	@RequestMapping(value="/student/{name}",method=RequestMethod.GET,produces=org.springframework.http.MediaType.APPLICATION_JSON_VALUE)
 	public Student getStudent(@PathVariable("name") String name){
 		
@@ -50,5 +58,50 @@ public class StudentRestAPIController {
 		student.setStudenthobby("Coding");
 		
 		return student;
+	}
+	
+	//**********************************UpdateStudent********************************************//
+	@RequestMapping(value="/studentUpdate/{name}",method = RequestMethod.PUT, consumes =org.springframework.http.MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<Boolean> updateStudent(@PathVariable("name") String name, @RequestBody Student student){
+		
+		System.out.println("Student Name: "+name);
+		System.out.println("Student name: "+student.getStudentname()+"\tStudent Hobby: "+student.getStudenthobby());
+		
+		//find matching student record using "name" from the DB
+		//if the record is found update it and return true or else return false
+		//having boolean as return type is not good practice, use status code(new ResponseEntity<Void>(HttpStatus.NOT_FOUND)
+		// or if both status and body then 
+		
+		//customize http response header
+		
+		HttpHeaders headers=new HttpHeaders();
+		headers.add("Key1", "Value");
+		
+		if(student.getStudentname().equals(null) || student.getStudenthobby().equals(null))
+			return new ResponseEntity<Boolean>(false,headers,HttpStatus.NOT_FOUND);
+		else
+			return new ResponseEntity<Boolean>(true,headers, HttpStatus.OK);
+		
+	}
+	
+	
+	//**********************************Create Student********************************************//
+	@RequestMapping(value="/studentNew",method = RequestMethod.POST, consumes =org.springframework.http.MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<Boolean> newStudent(@RequestBody Student student){
+		
+		System.out.println("Student name: "+student.getStudentname());
+		
+		return new ResponseEntity<Boolean>(true,HttpStatus.CREATED);
+		
+	}
+	
+	//**********************************Delete Student********************************************//
+	@RequestMapping(value="/studentDelete/{name}",method = RequestMethod.DELETE)
+	public ResponseEntity<Boolean> deleteStudent(@PathVariable("name") String name){
+		
+		System.out.println("Student name: "+name+" Deleted");
+		
+		return new ResponseEntity<Boolean>(true,HttpStatus.OK);
+		
 	}
 }
