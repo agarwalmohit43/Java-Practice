@@ -55,7 +55,7 @@ public class as {
 		Date obj=new Date();
 		
 		System.out.println(obj.getTime());
-		System.out.println((int)(Math.random()*100));
+		System.out.println(Math.abs(Math.random()*10));
 		System.out.println();
 		unixTime();
 		

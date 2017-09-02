@@ -52,10 +52,10 @@ public class as {
 		else
 			System.out.println("No");
 		
-		Date obj=new Date();
+		Date obj=new Date(1504207854997l);
 		
 		System.out.println(obj.getTime());
-		System.out.println((int)(Math.random()*100));
+		System.out.println(obj);
 		System.out.println();
 		unixTime();
 		
