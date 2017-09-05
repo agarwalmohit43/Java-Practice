@@ -4,6 +4,7 @@ import java.awt.PageAttributes.MediaType;
 import java.util.ArrayList;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,6 +25,7 @@ public class StudentRestAPIController {
 
 	//**********************************Retrive all Student********************************************//
 	/*@ResponseBody is not used when using class as restcontroller it tells all method automatic about rest*/
+	@CrossOrigin(origins = "*")
 	@RequestMapping(value= "/students", method=RequestMethod.GET, produces=org.springframework.http.MediaType.APPLICATION_JSON_VALUE)
 	public ArrayList<Student> studentInfo(){
 	
@@ -50,6 +52,7 @@ public class StudentRestAPIController {
 	}
 	
 	//**********************************Retrive Student********************************************//
+	@CrossOrigin(origins = "*")
 	@RequestMapping(value="/student/{name}",method=RequestMethod.GET,produces=org.springframework.http.MediaType.APPLICATION_JSON_VALUE)
 	public Student getStudent(@PathVariable("name") String name){
 		
@@ -61,6 +64,7 @@ public class StudentRestAPIController {
 	}
 	
 	//**********************************UpdateStudent********************************************//
+	@CrossOrigin(origins = "*")
 	@RequestMapping(value="/studentUpdate/{name}",method = RequestMethod.PUT, consumes =org.springframework.http.MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<Boolean> updateStudent(@PathVariable("name") String name, @RequestBody Student student){
 		
@@ -86,6 +90,7 @@ public class StudentRestAPIController {
 	
 	
 	//**********************************Create Student********************************************//
+	@CrossOrigin(origins = "*")
 	@RequestMapping(value="/studentNew",method = RequestMethod.POST, consumes =org.springframework.http.MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<Boolean> newStudent(@RequestBody Student student){
 		
@@ -96,6 +101,7 @@ public class StudentRestAPIController {
 	}
 	
 	//**********************************Delete Student********************************************//
+	@CrossOrigin(origins = "*")
 	@RequestMapping(value="/studentDelete/{name}",method = RequestMethod.DELETE)
 	public ResponseEntity<Boolean> deleteStudent(@PathVariable("name") String name){
 		

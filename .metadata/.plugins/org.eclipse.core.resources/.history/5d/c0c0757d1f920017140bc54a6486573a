@@ -1,0 +1,13 @@
+
+package http;
+
+public class GetRequest {
+
+	private static String GET_URL="http://localhost:8080/StudentAdmisionForm/students";
+	
+	public static void main(String[] args) {
+
+		
+	}
+
+}

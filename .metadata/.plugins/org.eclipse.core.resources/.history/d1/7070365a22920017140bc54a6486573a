@@ -1,0 +1,53 @@
+
+package http;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import org.json.*;
+
+public class GetRequest {
+
+	private static String GET_URL="http://localhost:8080/StudentAdmisionForm/students";
+	
+	public static void main(String[] args) throws IOException {
+
+		try {
+			URL url =new URL(GET_URL);
+			HttpURLConnection con = (HttpURLConnection)url.openConnection();
+			con.setRequestMethod("GET");
+			int responseCode = con.getResponseCode();
+			System.out.println("\nSending 'GET' request to URL : " + url);
+			System.out.println("Response Code : " + responseCode);
+			if (responseCode == HttpURLConnection.HTTP_OK) {
+
+				BufferedReader br =new BufferedReader(new InputStreamReader(con.getInputStream()));
+				
+				String inputLine;
+				StringBuffer response=new StringBuffer("");
+				
+				while((inputLine=br.readLine())!=null){
+					response.append(inputLine);
+				}
+				br.close();
+				
+				System.out.println(response);
+				
+				JSONObject jo = new JSONObject();
+			}else
+			{
+				System.out.println("Get Request Error");
+			}
+			
+			
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}

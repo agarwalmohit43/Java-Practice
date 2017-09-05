@@ -1,0 +1,13 @@
+
+package http;
+
+public class GetRequest {
+
+	private static String GET_URL="";
+	
+	public static void main(String[] args) {
+
+		
+	}
+
+}
