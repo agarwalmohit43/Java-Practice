@@ -20,13 +20,12 @@ import org.springframework.http.MediaType.*;
 import com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodType;
 import com.sun.org.apache.xpath.internal.operations.Bool;
 
-@CrossOrigin(origins = "*")
 @RestController
 public class StudentRestAPIController {
 
 	//**********************************Retrive all Student********************************************//
 	/*@ResponseBody is not used when using class as restcontroller it tells all method automatic about rest*/
-	//@CrossOrigin(origins = "*")
+	@CrossOrigin(origins = "*")
 	@RequestMapping(value= "/students", method=RequestMethod.GET, produces=org.springframework.http.MediaType.APPLICATION_JSON_VALUE)
 	public ArrayList<Student> studentInfo(){
 	
@@ -91,7 +90,7 @@ public class StudentRestAPIController {
 	
 	
 	//**********************************Create Student********************************************//
-	//@CrossOrigin(origins = "*")
+	@CrossOrigin(origins = "*")
 	@RequestMapping(value="/studentNew",method = RequestMethod.POST, consumes =org.springframework.http.MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<Boolean> newStudent(@RequestBody Student student){
 		
