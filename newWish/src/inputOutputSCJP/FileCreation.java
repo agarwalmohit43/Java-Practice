@@ -1,10 +1,17 @@
 package inputOutputSCJP;
 
 import java.io.File;
+import java.io.Serializable;
+
+import javax.swing.text.AttributeSet.ColorAttribute;
+
+
 
 public class FileCreation {
 
-	public static void main(String[] args) {
+	int a=5;
+	
+	public static final void main(String[] args) {
 
 		try{
 			boolean newFile = false;
@@ -16,6 +23,8 @@ public class FileCreation {
 		}catch(Exception e){
 			e.printStackTrace();
 		}
+		
+		
 	}
 
 }

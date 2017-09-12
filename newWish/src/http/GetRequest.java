@@ -48,7 +48,6 @@ public class GetRequest {
 				for (int i = 0; i < jsonarray.length(); i++) {
 				    JSONObject jsonobject = jsonarray.getJSONObject(i);
 				    String name = jsonobject.getString("student_name");
-				    
 				    System.out.println("Student Name: "+name);
 				}
 				

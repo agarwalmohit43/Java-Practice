@@ -87,3 +87,15 @@
 127.0.0.1 - - [05/Sep/2017:16:27:34 +0530] "POST /StudentAdmisionForm/studentNew HTTP/1.1" 201 34
 0:0:0:0:0:0:0:1 - - [05/Sep/2017:16:28:09 +0530] "POST /StudentAdmisionForm/studentNew HTTP/1.1" 201 14
 127.0.0.1 - - [05/Sep/2017:16:28:30 +0530] "POST /StudentAdmisionForm/studentNew HTTP/1.1" 201 34
+0:0:0:0:0:0:0:1 - - [05/Sep/2017:16:32:15 +0530] "GET /StudentAdmisionForm//students HTTP/1.1" 200 110
+0:0:0:0:0:0:0:1 - - [05/Sep/2017:16:32:44 +0530] "OPTIONS /StudentAdmisionForm/studentNew HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [05/Sep/2017:16:32:44 +0530] "POST /StudentAdmisionForm/studentNew HTTP/1.1" 201 34
+0:0:0:0:0:0:0:1 - - [05/Sep/2017:16:33:46 +0530] "OPTIONS /StudentAdmisionForm/studentUpdate/mohit HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [05/Sep/2017:16:33:46 +0530] "PUT /StudentAdmisionForm/studentUpdate/mohit HTTP/1.1" 200 34
+0:0:0:0:0:0:0:1 - - [05/Sep/2017:16:33:52 +0530] "PUT /StudentAdmisionForm/studentUpdate/mohit HTTP/1.1" 200 34
+0:0:0:0:0:0:0:1 - - [05/Sep/2017:16:33:53 +0530] "GET /StudentAdmisionForm//students HTTP/1.1" 200 110
+0:0:0:0:0:0:0:1 - - [05/Sep/2017:16:33:55 +0530] "OPTIONS /StudentAdmisionForm/studentDelete/mohit HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [05/Sep/2017:16:33:55 +0530] "DELETE /StudentAdmisionForm/studentDelete/mohit HTTP/1.1" 200 34
+0:0:0:0:0:0:0:1 - - [05/Sep/2017:17:13:56 +0530] "OPTIONS /StudentAdmisionForm/studentNew HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [05/Sep/2017:17:13:56 +0530] "POST /StudentAdmisionForm/studentNew HTTP/1.1" 201 34
+0:0:0:0:0:0:0:1 - - [05/Sep/2017:17:13:58 +0530] "GET /StudentAdmisionForm//students HTTP/1.1" 200 110

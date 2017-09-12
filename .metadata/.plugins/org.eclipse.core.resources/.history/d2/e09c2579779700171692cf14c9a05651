@@ -1,0 +1,18 @@
+package com.mohit.september;
+
+public class StaticClass {
+
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		checkStatic();
+	}
+
+	public static void checkStatic() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

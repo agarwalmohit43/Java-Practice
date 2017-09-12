@@ -1,0 +1,35 @@
+package after;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+public class Prac {
+
+	public static void main(String[] args) {
+
+		
+		Map<Integer,String> map=new HashMap<Integer,String>();
+		ArrayList<String> al = new ArrayList<String>();
+		
+		map.put(1,"Mohit");
+		map.put(2,"Mohit");
+		map.put(3,"Mohit");
+		map.put(4,"Mohit");
+		map.put(5,"Mohit");
+		map.put(6,"Mohit");
+		
+		
+		//Iterating map
+		for(Map.Entry<Integer, String> ittr: map.entrySet())
+		{
+			al.add(ittr.getValue()+" -> "+ittr.getKey());
+			System.out.println("Key: "+ittr.getKey()+" Value: "+ittr.getValue()+" Class: "+ittr.getClass());
+			System.out.println("Iterator value: "+ittr);
+		}
+		
+		System.out.println(al);
+		
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.mohit.september;
+abstract class Shape{
+	private void draw(){
+		System.out.println("Shape Class");
+	}
+}
+
+class Circle extends Shape{
+	private void draw() {
+		System.out.println("Circle");
+	}
+}
+
+public class Polymorphism {
+
+	public static void main(String[] args) {
+
+		Shape obj=new Circle();
+		obj.draw();
+		
+	}
+
+}

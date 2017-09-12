@@ -17,6 +17,7 @@ public class typecasting {
 		if(obj instanceof Student){
 			Student s=(Student) obj;
 			System.out.println("Working");
+			System.out.println(s.age);
 		}
 		
 		

@@ -1,5 +1,6 @@
 package after;
 interface comm{
+	int a=5;
 	 void checks();
 }
 abstract class Inherits{

@@ -1,0 +1,16 @@
+package com.mohit.september;
+
+public class ThreadExample extends Thread {
+
+	@Override
+	public void run() {
+		System.out.println("Run is Runnig");
+	}
+	public static void main(String[] args) {
+		
+		ThreadExample obj=new ThreadExample();
+		obj.start();
+		System.out.println("End of main()");
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.mohit.september;
+abstract class Shape{
+	void draw(){
+		
+	}
+}
+
+
+public class Polymorphism {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

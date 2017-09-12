@@ -1,0 +1,21 @@
+package String;
+
+import java.util.Arrays;
+
+public class RemoveDuplicateStringElement {
+
+	public static void main(String[] args) {
+
+		String str="geeksforgeeks";
+		System.out.println(removeDup(str));
+	}
+
+	private static char[] removeDup(String str) {
+
+		char temp[] = str.toCharArray();
+		Arrays.sort(temp);
+		
+		return null;
+	}
+
+}

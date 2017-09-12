@@ -1,0 +1,55 @@
+package com.mohit.september;
+
+
+abstract class Shape{
+	
+	private Shape() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	Shape(int a){
+		
+	}
+	
+	 void draw(){
+		System.out.println("Shape Class");
+	}
+}
+
+class Circle extends Shape{
+	
+	public Circle() {
+		super(5);
+	}
+	
+	void draw(){
+		System.out.println("Circle");
+	}
+}
+
+public class Polymorphism {
+	
+	
+
+	public static void main(String[] args) {
+
+		Shape obj=new Circle();
+		obj.draw();
+		
+	}
+
+}
+
+/*
+ Access Specifier: private -> default -> protected -> public
+
+1. When shape has private method : Compile error( method not visible outside class)
+2. When shape has protected method : Compile error( reduce cannot be done to lower access specifier i.e to default)
+3. When both are protected : Fine
+4. When Circle has protected: Fine
+5. When Circle has private: Cannot deduce to lower since private is higher than default
+
+6. When Shape method throws unchecked exception : use try catch block for obj creation
+7. When Circle method throws unchecked exception : Shape need to throw exception
+8. When both throw exception : use try catch block
+ */

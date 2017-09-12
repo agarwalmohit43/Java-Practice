@@ -1,0 +1,15 @@
+package com.mohit.september;
+
+public class ThreadExample extends Thread {
+
+	@Override
+	public void run() {
+		System.out.println("Run is Runnig");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

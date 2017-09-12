@@ -27,7 +27,7 @@ class objB{
 		System.out.println(obj.x);
 		obj.x=500;
 		obj=null;
-		System.out.println(obj);
+		System.out.println("K "+obj);
 		System.out.println(obj.x);//null
 	}
 }

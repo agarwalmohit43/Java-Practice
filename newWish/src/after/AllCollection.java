@@ -21,12 +21,12 @@ public class AllCollection {
 		
 		//Set's
 		//hashset();
-		//treeset();
+		treeset();
 		
 		//Map
 		//hashmap();
 		//treemap();
-		hashtable();
+//		hashtable();
 	}
 
 	private static void hashtable() {
